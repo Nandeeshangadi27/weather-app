@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montseratt", sans-serif;
+  background-color: black;
+}
+.app {
+  background-image: url("./assets/rain.png");
+  background-size: cover;
+  width: 600px;
+  height: 500px;
+  position: relative;
+  top: 23vh;
+  left: 60vh;
+  top: 10vh;
+  transition: 0.4 ease-out;
+  border-radius: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar {
+  width: 85%;
+  height: 6vh;
+  position: relative;
+  top: 0vh;
+  left: 5.5vh;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255, 0.5);
+  font-weight: bold;
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar:focus {
+  background-color: rgb(255, 255, 255, 0.75);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.locatin-box {
+  position: relative;
+  left: 23vh;
+  bottom: -10vh;
+}
+.location {
+  font-size: 27px;
+  font-weight: bold;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.date {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  left: 33px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-box {
+  position: relative;
+  left: 15vw;
+  bottom: -10vw;
+}
+.temp {
+  position: relative;
+  left: -60px;
+  top: -60px;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(225, 225, 225, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.weather {
+  position: relative;
+  top: -30px;
+  right: -25px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
